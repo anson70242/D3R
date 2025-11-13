@@ -29,7 +29,7 @@ docker build -t d3r .
 
 # 2. Run the experiment
 #    (Ensure your downloaded datasets are in this directory for the mount to work)
-docker run --rm --gpus all \
+docker run --rm -it --gpus all \
     -v .:/app/data \
     d3r \
     /bin/bash
