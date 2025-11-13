@@ -32,7 +32,7 @@ docker build -t d3r .
 docker run --rm --gpus all \
     -v .:/app/data \
     d3r \
-    /bin/bash -c "bash ./script/run.sh"
+    /bin/bash
 ```
 
 2. Download data. You can obtain two benchmarks from [Google Cloud](https://drive.google.com/drive/folders/1UJ6SGfb6h-9R0L18FLDXpISKh1nhaqWA?usp=sharing). The datasets are well pre-processed. For the SWaT dataset, you can apply for it by following its [official tutorial](https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/). We unify the SWaT dataset to minute granularity and retain only continuous metrics:
